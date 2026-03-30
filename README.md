@@ -119,7 +119,6 @@ The CPU interacts with hardware using **memory-mapped registers**.
 
 ### 🟢 1. Compile Firmware (C → HEX)
 
-```bash
 ~/xpack-riscv-none-elf-gcc-12.3.0-1/bin/riscv-none-elf-gcc \
 -march=rv32i \
 -mabi=ilp32 \
@@ -142,7 +141,7 @@ sensorless_sector.v bldc_peripheral.v soc_bldc_top.v tb_soc_bldc1.v
 
 vvp soc_bldc_sim 2>&1 | tee sim_output.txt
 
-gtkwave soc_bldc.vcd ```
+gtkwave soc_bldc.vcd 
 
 ## 📌 SUMMARY
 
