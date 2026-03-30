@@ -143,3 +143,23 @@ sensorless_sector.v bldc_peripheral.v soc_bldc_top.v tb_soc_bldc1.v
 vvp soc_bldc_sim 2>&1 | tee sim_output.txt
 
 gtkwave soc_bldc.vcd
+
+## 📌 Summary
+
+This project presents a complete implementation of a **BLDC motor controller on FPGA** using a **PicoRV32 RISC-V processor**.
+
+The system integrates:
+- Real-time PWM generation in hardware  
+- Dual commutation modes (Hall and sensorless)  
+- Memory-mapped CPU control interface  
+- Hardware-based protection mechanisms  
+
+Time-critical operations such as commutation, deadtime insertion, and fault handling are implemented in RTL, while high-level control is managed through RISC-V firmware.
+
+The design is fully verified through simulation and successfully deployable on FPGA with a custom-built power stage using IR2101 gate drivers and MOSFET half-bridges.
+
+This project demonstrates a complete **hardware-software co-design approach** combining:
+- FPGA-based control systems  
+- Embedded RISC-V processing  
+- Power electronics integration  
+- End-to-end system validation  
