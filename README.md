@@ -114,16 +114,12 @@ The CPU interacts with hardware using **memory-mapped registers**.
 | 0x40000010   | Current Sense  |
 | 0x40000014   | Voltage Sense  |
 
-### 🧪 Example Code
 
-```c
-*(volatile int*)0x40000000 = duty;
-*(volatile int*)0x40000004 = 1;
-*(volatile int*)0x40000008 = mode;
+## ⚙️ Build & Run Instructions
 
-##⚙️ Build & Run Instructions
-🟢 1. Compile Firmware (C → ELF)
+### 🟢 1. Compile Firmware (C → ELF)
 
+```bash
 ~/xpack-riscv-none-elf-gcc-12.3.0-1/bin/riscv-none-elf-gcc \
 -march=rv32i \
 -mabi=ilp32 \
@@ -131,13 +127,13 @@ The CPU interacts with hardware using **memory-mapped registers**.
 -Wl,-Ttext=0x0 \
 -o firmware.elf bldc_firmware.c
 
-##🟢2. Convert ELF → HEX (for FPGA)
+🟢 2. Convert ELF → HEX (for FPGA)
 ~/xpack-riscv-none-elf-gcc-12.3.0-1/bin/riscv-none-elf-objcopy \
 -O verilog \
 --verilog-data-width=4 \
 firmware.elf program.hex
 
-##🟢 3. Run Simulation (Icarus Verilog)
+🟢 3. Run Simulation (Icarus Verilog)
 iverilog -g2012 -o soc_bldc_sim \
 picorv32.v ram.v bldc_top.v protection_module.v pwm_six_step.v \
 hall_to_sector.v hall_debounce.v zcd_logic.v comm_timer.v \
@@ -146,26 +142,3 @@ sensorless_sector.v bldc_peripheral.v soc_bldc_top.v tb_soc_bldc1.v
 vvp soc_bldc_sim 2>&1 | tee sim_output.txt
 
 gtkwave soc_bldc.vcd
-
-##🧪 Simulation Results
-
-✔ Correct 6-step commutation
-✔ PWM switching verified
-✔ Deadtime insertion working
-✔ Hall & sensorless modes validated
-✔ Protection triggered under fault
-
-##🛡️ Protection Behavior
-Condition	Action Taken
-Overcurrent	PWM Disabled
-Undervoltage	System Shutdown
-
-##📌 Summary
-
-This project demonstrates a complete FPGA-based BLDC motor control system combining:
-
-Real-time hardware control
-RISC-V processor integration
-Power electronics design
-Full simulation and validation
-
