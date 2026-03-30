@@ -144,7 +144,7 @@ vvp soc_bldc_sim 2>&1 | tee sim_output.txt
 
 gtkwave soc_bldc.vcd
 
-## 📌 Summary
+## 📌 SUMMARY
 
 This project presents a complete implementation of a **BLDC motor controller on FPGA** using a **PicoRV32 RISC-V processor**.
 
