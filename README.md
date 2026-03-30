@@ -142,7 +142,7 @@ sensorless_sector.v bldc_peripheral.v soc_bldc_top.v tb_soc_bldc1.v
 
 vvp soc_bldc_sim 2>&1 | tee sim_output.txt
 
-gtkwave soc_bldc.vcd
+gtkwave soc_bldc.vcd ```
 
 ## 📌 SUMMARY
 
