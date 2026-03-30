@@ -1,0 +1,185 @@
+VCD info: dumpfile soc_bldc.vcd opened for output.
+
+=================================================
+  RISC-V BLDC Motor Controller Simulation
+  PWM period = 81.92us @ 50MHz / 12-bit counter
+  Sector duration = 500us -> ~6 PWM pulses/sector
+=================================================
+
+[200000] Reset released - CPU starting...
+
+[370000] SECTOR CHANGE -> 1
+[470000] *** BLDC_PERIPHERAL: CURRENT written = 1500
+[490000] CPU WRITE: addr=0x40000010 data=0x000005dc (RAM=0 BLDC=1)
+         --> CURRENT = 1500
+[490000] *** BLDC_PERIPHERAL: CURRENT written = 1500
+[510000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[710000] *** BLDC_PERIPHERAL: VOLTAGE written = 2500
+[730000] CPU WRITE: addr=0x40000014 data=0x000009c4 (RAM=0 BLDC=1)
+         --> VOLTAGE = 2500
+[730000] *** BLDC_PERIPHERAL: VOLTAGE written = 2500
+[830000] *** BLDC_PERIPHERAL: MODE written = 0
+[850000] CPU WRITE: addr=0x40000008 data=0x00000000 (RAM=0 BLDC=1)
+         --> MODE =       HALL
+[850000] *** BLDC_PERIPHERAL: MODE written = 0
+[1010000] *** BLDC_PERIPHERAL: DUTY written = 1000
+[1030000] CPU WRITE: addr=0x40000000 data=0x000003e8 (RAM=0 BLDC=1)
+         --> DUTY_CYCLE = 1000 (24.4%)
+[1030000] *** BLDC_PERIPHERAL: DUTY written = 1000
+[1190000] *** BLDC_PERIPHERAL: ENABLE written = 1
+[1210000] CPU WRITE: addr=0x40000004 data=0x00000001 (RAM=0 BLDC=1)
+         --> ENABLE = 1
+[1210000] *** BLDC_PERIPHERAL: ENABLE written = 1
+[1230000] PWM: UH=1 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[20230000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[82150000] PWM: UH=1 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[102150000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[164070000] PWM: UH=1 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[184070000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[245990000] PWM: UH=1 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[265990000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[327910000] PWM: UH=1 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[347910000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[409830000] PWM: UH=1 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[429830000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[491750000] PWM: UH=1 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[500170000] SECTOR CHANGE -> 2
+[500210000] PWM: UH=1 UL=0 VH=0 VL=0 WH=0 WL=0  Sector=2  Fault=0
+[500310000] PWM: UH=1 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[511750000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[573670000] PWM: UH=1 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[593670000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[655590000] PWM: UH=1 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[675590000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[737510000] PWM: UH=1 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[757510000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[819430000] PWM: UH=1 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[839430000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[901350000] PWM: UH=1 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[921350000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[983270000] PWM: UH=1 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[1000170000] SECTOR CHANGE -> 3
+[1000210000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[1000310000] PWM: UH=0 UL=0 VH=1 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[1003270000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[1065190000] PWM: UH=0 UL=0 VH=1 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[1085190000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[1147110000] PWM: UH=0 UL=0 VH=1 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[1167110000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[1229030000] PWM: UH=0 UL=0 VH=1 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[1249030000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[1310950000] PWM: UH=0 UL=0 VH=1 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[1330950000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[1392870000] PWM: UH=0 UL=0 VH=1 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[1412870000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[1474790000] PWM: UH=0 UL=0 VH=1 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[1494790000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[1500170000] SECTOR CHANGE -> 4
+[1500210000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[1500310000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[1556710000] PWM: UH=0 UL=1 VH=1 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[1576710000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[1638630000] PWM: UH=0 UL=1 VH=1 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[1658630000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[1720550000] PWM: UH=0 UL=1 VH=1 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[1740550000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[1802470000] PWM: UH=0 UL=1 VH=1 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[1822470000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[1884390000] PWM: UH=0 UL=1 VH=1 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[1904390000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[1966310000] PWM: UH=0 UL=1 VH=1 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[1986310000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[2000170000] SECTOR CHANGE -> 5
+[2048230000] PWM: UH=0 UL=1 VH=0 VL=0 WH=1 WL=0  Sector=5  Fault=0
+[2068230000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=5  Fault=0
+[2130150000] PWM: UH=0 UL=1 VH=0 VL=0 WH=1 WL=0  Sector=5  Fault=0
+[2150150000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=5  Fault=0
+[2212070000] PWM: UH=0 UL=1 VH=0 VL=0 WH=1 WL=0  Sector=5  Fault=0
+[2232070000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=5  Fault=0
+[2293990000] PWM: UH=0 UL=1 VH=0 VL=0 WH=1 WL=0  Sector=5  Fault=0
+[2313990000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=5  Fault=0
+[2375910000] PWM: UH=0 UL=1 VH=0 VL=0 WH=1 WL=0  Sector=5  Fault=0
+[2395910000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=5  Fault=0
+[2457830000] PWM: UH=0 UL=1 VH=0 VL=0 WH=1 WL=0  Sector=5  Fault=0
+[2477830000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=5  Fault=0
+[2500170000] SECTOR CHANGE -> 6
+[2500210000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=0  Sector=6  Fault=0
+[2500310000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=6  Fault=0
+[2539750000] PWM: UH=0 UL=0 VH=0 VL=1 WH=1 WL=0  Sector=6  Fault=0
+[2559750000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=6  Fault=0
+[2621670000] PWM: UH=0 UL=0 VH=0 VL=1 WH=1 WL=0  Sector=6  Fault=0
+[2641670000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=6  Fault=0
+[2703590000] PWM: UH=0 UL=0 VH=0 VL=1 WH=1 WL=0  Sector=6  Fault=0
+[2723590000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=6  Fault=0
+[2785510000] PWM: UH=0 UL=0 VH=0 VL=1 WH=1 WL=0  Sector=6  Fault=0
+[2805510000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=6  Fault=0
+[2867430000] PWM: UH=0 UL=0 VH=0 VL=1 WH=1 WL=0  Sector=6  Fault=0
+[2887430000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=6  Fault=0
+[2949350000] PWM: UH=0 UL=0 VH=0 VL=1 WH=1 WL=0  Sector=6  Fault=0
+[2969350000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=6  Fault=0
+[3000170000] SECTOR CHANGE -> 1
+[3031270000] PWM: UH=1 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[3051270000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[3113190000] PWM: UH=1 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[3133190000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[3195110000] PWM: UH=1 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[3215110000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[3277030000] PWM: UH=1 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[3297030000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[3358950000] PWM: UH=1 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[3378950000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[3440870000] PWM: UH=1 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[3460870000] PWM: UH=0 UL=0 VH=0 VL=1 WH=0 WL=0  Sector=1  Fault=0
+[3500170000] SECTOR CHANGE -> 2
+[3500210000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=0  Sector=2  Fault=0
+[3500310000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[3522790000] PWM: UH=1 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[3542790000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[3604710000] PWM: UH=1 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[3624710000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[3686630000] PWM: UH=1 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[3706630000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[3768550000] PWM: UH=1 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[3788550000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[3850470000] PWM: UH=1 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[3870470000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[3932390000] PWM: UH=1 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[3952390000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=2  Fault=0
+[4000170000] SECTOR CHANGE -> 3
+[4014310000] PWM: UH=0 UL=0 VH=1 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[4034310000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[4096230000] PWM: UH=0 UL=0 VH=1 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[4116230000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[4178150000] PWM: UH=0 UL=0 VH=1 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[4198150000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[4260070000] PWM: UH=0 UL=0 VH=1 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[4280070000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[4341990000] PWM: UH=0 UL=0 VH=1 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[4361990000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[4423910000] PWM: UH=0 UL=0 VH=1 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[4443910000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=1  Sector=3  Fault=0
+[4500170000] SECTOR CHANGE -> 4
+[4500210000] PWM: UH=0 UL=0 VH=0 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[4500310000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[4505830000] PWM: UH=0 UL=1 VH=1 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[4525830000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[4587750000] PWM: UH=0 UL=1 VH=1 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[4607750000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[4669670000] PWM: UH=0 UL=1 VH=1 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[4689670000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[4751590000] PWM: UH=0 UL=1 VH=1 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[4771590000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[4833510000] PWM: UH=0 UL=1 VH=1 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[4853510000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[4915430000] PWM: UH=0 UL=1 VH=1 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[4935430000] PWM: UH=0 UL=1 VH=0 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[4997350000] PWM: UH=0 UL=1 VH=1 VL=0 WH=0 WL=0  Sector=4  Fault=0
+[5000170000] SECTOR CHANGE -> 5
+
+=================================================
+  Simulation complete — view: gtkwave soc_bldc.vcd
+  Zoom to 500us/div to see PWM pulses within sectors
+  Zoom to 50ns/div to see individual PWM switching
+=================================================
+
+tb_soc_bldc1.v:155: $finish called at 5000200000 (1ps)
