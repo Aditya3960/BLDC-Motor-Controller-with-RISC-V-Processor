@@ -135,7 +135,6 @@ firmware.elf program.hex
 
 ### 🟢 3. Run Simulation (Icarus Verilog)
 
-```bash
 iverilog -g2012 -o soc_bldc_sim \
 picorv32.v ram.v bldc_top.v protection_module.v pwm_six_step.v \
 hall_to_sector.v hall_debounce.v zcd_logic.v comm_timer.v \
