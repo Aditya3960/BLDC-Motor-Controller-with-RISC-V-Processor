@@ -43,4 +43,3 @@ The system uses **memory-mapped I/O**, allowing direct communication between CPU
 
 ---
 
-## Example
