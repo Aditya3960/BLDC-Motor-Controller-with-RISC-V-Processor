@@ -127,6 +127,7 @@ The CPU interacts with hardware using **memory-mapped registers**.
 -o firmware.elf bldc_firmware.c
 
 🟢 2. Convert ELF → HEX (for FPGA)
+
 ~/xpack-riscv-none-elf-gcc-12.3.0-1/bin/riscv-none-elf-objcopy \
 -O verilog \
 --verilog-data-width=4 \
